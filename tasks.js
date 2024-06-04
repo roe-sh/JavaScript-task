@@ -76,4 +76,5 @@ console.log('Zakat=' + zakat)
   return a-b;
   }
   )
+  
   console.log(arr_org)
