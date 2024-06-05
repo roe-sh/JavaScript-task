@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palestine free</title>
+</head>
+<body>
+    <img id="img" src="Jo.jpg" height="100px">
+<br>
+    <select id="img2" onchange="myFunction()">
+        <option value="Jordan" defult>Jordan</option>
+      <option value="Palestine">Palestine</option>
+      
+    
+      
+    </select>
+    <br>
+    <script>
+   
+function myFunction() {
+  var x = document.getElementById("img2").value;
+  if(x=="Palestine"){
+    document.getElementById("img").src = "pal.jpg";
+  }
+  else if(x=="Jordan"){
+    document.getElementById("img").src = "jo.jpg";
+
+  }
+   
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exersices3</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <select id="fontFamily-1" onchange="myFunction()">
+        <option value="Arial" defult>Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+    <select id="fontsize-2" onchange="myFunction_size()">
+        <option value="10px" defult>10px</option>
+      <option value="20px">20px</option>
+      <option value="50px">50px</option>
+      <option value="100px">100px</option>
+    </select>
+    
+    <input type="checkbox" name="Italic" value="Italic" id="Italic" onclick="myFunction_Italic()">  <label for="Italic">Italic</label>
+    <input type="checkbox" name="Bold" value="Bold" id="Bold" onclick="myFunction_Bold()"> <label for="Bold">Bold</label>
+    <input type="checkbox" name="underline" value="underline" id="underline" onclick="myFunction_underline()"><label for="underline">underline</label>
+
+
+    <p id="NewStyle">
+        THIS IS MY TEXT
+    </p>
+    <script>
+
+        function myFunction(){
+            var x=document.getElementById("fontFamily-1").value;
+            if(x=="Arial"){
+                document.getElementById("NewStyle").style.fontFamily="Arial";
+            }else if(x=="Verdana"){
+                document.getElementById("NewStyle").style.fontFamily="Verdana";
+
+            }
+            else if(x=="Times New Roman"){
+                document.getElementById("NewStyle").style.fontFamily="Times New Roman";
+
+            }
+            else if(x=="Courier New"){
+                document.getElementById("NewStyle").style.fontFamily="Courier New";
+
+            }
+        }
+        function myFunction_size(){
+            var x=document.getElementById("fontsize-2").value;
+            if(x=="10px"){
+                document.getElementById("NewStyle").style.fontSize="10px";
+            }else if(x=="20px"){
+                document.getElementById("NewStyle").style.fontSize="20px";
+
+            }
+            else if(x=="50px"){
+                document.getElementById("NewStyle").style.fontSize="50px";
+
+            }
+            else if(x=="100px"){
+                document.getElementById("NewStyle").style.fontSize="100px";
+
+            }}
+            function myFunction_Bold(){
+                var x=document.getElementById("Bold");
+                if(x.checked)
+                document.getElementById("NewStyle").style.fontWeight = "bold";
+                else{
+                    document.getElementById("NewStyle").style.fontWeight = "normal";}
+
+
+            }
+            function myFunction_Italic(){
+                var x=document.getElementById("Italic");
+                if(x.checked){
+                document.getElementById("NewStyle").style.fontStyle="italic";
+            }
+            else{
+                document.getElementById("NewStyle").style.fontStyle="normal";
+
+            }
+
+            }
+            function myFunction_underline(){
+                var x=document.getElementById("underline");
+                if(x.checked){
+                document.getElementById("NewStyle").style.textDecoration = "underline";}
+                else{
+                    document.getElementById("NewStyle").style.textDecoration = "none";
+                }
+
+            }
+    </script>
+</body>
+</html>

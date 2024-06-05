@@ -1,6 +1,16 @@
 /* 1. Write a JavaScript program that accept two integers and
  * display the larger.Go to the editor */
 /******* Start Your Code *********/
+function rahaf (num ){
+
+    if(0<num)
+        return console.log ("positive") ;
+    else {
+      return  console.log("negative")
+
+    }
+}
+
 
 function larger ( a ,b ){
   if(a>b){
