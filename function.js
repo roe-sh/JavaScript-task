@@ -593,4 +593,3 @@ resetCounter();
 counter();
 
 script1.js
-12 KB

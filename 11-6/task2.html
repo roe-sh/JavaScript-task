@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            visibility: hidden;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="Fname">Enter a Fname:</label><br>
+        <input type="text" id="Fname" oninput="valname()">
+        <span id="fnames">Numbers are not allowed</span><br>
+
+        <label for="Lname">Enter a Lname:</label><br>
+        <input type="text" id="Lname" oninput="valname()">
+        <span id="lnames">Numbers are not allowed</span><br>
+
+        <label for="Bdate">Enter a Bdate</label><br>
+        <input type="text" id="Bdate" oninput="valdate()">
+        <span id="bdates">The format should be dd/mm/yyyy</span><br>
+
+        <label for="email">Enter an Email:</label><br>
+        <input type="text" id="email" oninput="valemail()">
+        <span id="emails">The e-mail is not valid</span><br>
+
+        <label for="email2">Confirm Email:</label><br>
+        <input type="text" id="email2" oninput="valemail()">
+        <span id="email2s">The e-mails does not match</span><br>
+
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" oninput="valpass()">
+        <span id="passs">Password must be at least 8 characters long and include at least one special character.</span><br>
+
+        <label for="pass2">Confirm Password:</label><br>
+        <input type="password" id="pass2" oninput="valpass()">
+        <span id="pass2s">The passwords does not match</span><br><br>
+        <input type="submit" value="submit">
+    </form>
+    
+    <script src="index2.js"></script>
+</body>
+</html>
