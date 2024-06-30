@@ -24,7 +24,7 @@ createTask(task)
 document.getElementById("add-task-button").addEventListener("click", function () {
     let taskTextField = document.getElementById("task-text-field")
     if (taskTextField.value === "") {
-        alert("Are you retarded?")
+        alert("please add a task and do something for your self...")
 
     } else {
 
